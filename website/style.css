@@ -1,0 +1,96 @@
+html {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    color: #f0d43a;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+#app {
+    min-height: 100vh;
+    display: grid;
+    padding-left: 1.2em;
+    background-image: url('weather.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headline {
+    font-size: 2em;
+    text-align: center;
+}
+
+.entry {
+    background: rgba(59, 74, 107, .4);
+}
+
+.title {
+    color: #00FF7F;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    color: #00FF7F;
+}
+
+input {
+    display: block;
+    height: auto;
+    width: 200px;
+    background: transparent;
+    border: 0.1em solid #00FF7F;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    display: block;
+    margin-top: 0.3em;
+    padding: 0.3em;
+    background: #3b4a6b;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 2px 4px 5px #444;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+textarea {
+    display: block;
+    width: 280px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid #00FF7F;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    resize: vertical;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #f0d43a;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
+}
